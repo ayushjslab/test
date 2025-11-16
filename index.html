@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget Test</title>
 </head>
 <body>
-    Hello world
+  Hello world
 
-    <!-- Include widget script at the end of body -->
-    <script src="https://echomark.vercel.app/widget.js?siteId=69195bb3d142c7a12274f9c6"></script>
+  <!-- Optional: global variable fallback -->
+  <script>
+    window.WIDGET_SITE_ID = "69195bb3d142c7a12274f9c6";
+  </script>
+
+  <!-- Widget script -->
+  <script src="https://echomark.vercel.app/widget.js?siteId=69195bb3d142c7a12274f9c6"></script>
 </body>
 </html>
